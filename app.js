@@ -74,7 +74,7 @@ switch(z){
 
     default:
     console.log(red("Error:Enter option again"));
-    option();
+    option(a,b);
     break;
 
 }
