@@ -49,27 +49,33 @@ function input(){
     
 }
 function option(a,b){
-let z=Number(scan.questionInt(bluegreen("Enter the option no:\n1.ADD\n2.Sub\n3.Multiply\n4.Divide\n5.Modulus")))
+    let res
+let z=Number(scan.questionInt(bluegreen("\nEnter the option no:\n1.ADD\n2.Sub\n3.Multiply\n4.Divide\n5.Modulus:")))
 switch(z){
    case 1:
-    console.log(purple(Number(a)+Number(b)));
+    res=Number(a)+Number(b)
+    console.log(purple(`The sum is:${res}`));
     break;
 
    case 2:
-    console.log(purple(Number(a)-Number(b)));
+    res=Number(a)-Number(b)
+    console.log(purple(`The subtraction results in:${res}`));
     break;
    
    case 3:
-    console.log(purple(Number(a)*Number(b)));
+    res=Number(a)*Number(b)
+    console.log(purple(`The product is:${res}`));
     break;
 
    case 4:
-    console.log(purple(Number(a)/Number(b)));
+    res=Number(a)/Number(b)
+    console.log(purple(`Division result is:${res}`));
     break;
 
    
    case 5:
-    console.log(purple(Number(a)%Number(b)));
+    res=Number(a)%Number(b)
+    console.log(purple(`The remainder is:${res}`))
     break;
 
     default:
